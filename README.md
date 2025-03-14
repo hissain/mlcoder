@@ -1,6 +1,6 @@
 # MLCoder
 
-MLCoder is a Python package that provides a collection of frequently used Python code snippets for Machine Learning. This package can be easily installed and used via the command-line interface (CLI).
+MLCoder is a Python package that provides a collection of frequently used code snippets for Machine Learning, offering a command-line interface (CLI) to search and copy files from its built-in repository. Users can easily install it via PyPI or GitHub and leverage its simple commands to quickly access useful scripts.
 
 ## Installation
 

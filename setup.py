@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mlcoder',
-    version='0.1.2',
+    version='0.1.3',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -10,7 +10,7 @@ setup(
     ],
     author='Md. Sazzad Hissain Khan',
     author_email='hissain.khan@gmail.com',
-    description='Get the collection of Python code used frequently in Machine Learning using pip package :).',
+    description='MLCoder is a Python package that provides a collection of frequently used code snippets for Machine Learning, offering a command-line interface (CLI) to search and copy files from its built-in repository. Users can easily install it via PyPI or GitHub and leverage its simple commands to quickly access useful scripts.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/hissain/mlcoder',
