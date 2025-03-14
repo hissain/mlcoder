@@ -1,11 +1,13 @@
-# mlcoder/file.py
-
 import os
 import shutil
 import inspect
 
-def copy_file_to_working_directory(filename, caller_dir=None, source_dir='files'):
-    source_path = os.path.join(os.path.dirname(__file__), source_dir, filename)
+def copy_file_to_working_directory(filename, caller_dir=None, source_dir='files/'):
+    print(f"Copying {filename} to working directory...")
+    print(f"Caller directory: {caller_dir}")
+    print(f"Source directory: {source_dir}")
+
+    source_path = os.path.join(source_dir, filename)
 
     if caller_dir:
         destination_path = os.path.join(caller_dir, filename)
@@ -16,8 +18,10 @@ def copy_file_to_working_directory(filename, caller_dir=None, source_dir='files'
         destination_path = os.path.join(caller_directory, filename)
     
     if not os.path.exists(source_path):
-        raise FileNotFoundError(f"The file {filename} does not exist in the ./{source_dir} directory.")
+        raise FileNotFoundError(f"The file {filename} does not exist in the repo directory.")
     
+    os.makedirs(os.path.dirname(destination_path), exist_ok=True)
+
     shutil.copy(source_path, destination_path)
     print(f"Copied {filename} to {destination_path}")
 

@@ -21,7 +21,7 @@ setup(
     ],
     python_requires='>=3.11',
     package_data={
-        "mlcoder": ["files/*"],
+        "mlcoder": ["files/**/*"],
     },
 
     entry_points={
