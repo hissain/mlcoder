@@ -1,19 +1,13 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
     name='mlcoder',
-    version='0.1.0',
+    version='0.1.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         "numpy",
     ],
-    entry_points={
-        'console_scripts': [
-        ],
-    },
     author='Md. Sazzad Hissain Khan',
     author_email='hissain.khan@gmail.com',
     description='Get the collection of Python code used frequently in Machine Learning using pip package :).',
@@ -26,4 +20,13 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.11',
+    package_data={
+        "mlcoder": ["files/*"],
+    },
+
+    entry_points={
+        'console_scripts': [
+            'mlcoder=mlcoder.cli:main',
+        ],
+    },
 )

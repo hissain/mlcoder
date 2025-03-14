@@ -1,5 +1,3 @@
-# mlcoder/ui.py
-
 import json
 
 def pretty_print(content):
