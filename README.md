@@ -2,6 +2,10 @@
 
 MLCoder is a Python package that provides a collection of frequently used code snippets for Machine Learning, offering a command-line interface (CLI) to search and copy files from its built-in repository. Users can easily install it via PyPI or GitHub and leverage its simple commands to quickly access useful scripts.
 
+## Why This Repository?
+
+Every developer maintains their own collection of familiar code snippets for various purposes. Typically, these snippets are stored in platforms like GitHub, requiring developers to manually search, open a browser, and copy the needed code—wasting valuable time. This repository streamlines that process by allowing developers to quickly search for and copy their code directly into their working directory. Additionally, developers can clone this project, customize it with their own codebase, and publish it to PyPI, enabling seamless access to their personal code library as a PyPI-backed module.
+
 ## Installation
 
 You can install MLCoder from PyPI:
